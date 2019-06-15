@@ -1,7 +1,7 @@
 export class TransferTransaction {
   constructor(public addressesTo: Array<string>,
-              public amounts: Array<number>,
-              public fee: number,
+              public amounts: Array<string>,
+              public fee: string,
               public publicKey: string,
               public signature: string,
               public transactionHash: string,

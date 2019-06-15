@@ -2,12 +2,12 @@
   "name": "@theqrl/js-api-bridge",
   "version": "0.0.1",
   "description": "",
-  "main": "src/server.js",
+  "main": "src/client.js",
   "scripts": {
     "build-ts": "tsc",
     "start": "npm run serve",
-    "serve": "node src/server.js",
-    "watch-node": "nodemon dist/server.js",
+    "serve": "node src/client.js",
+    "watch-node": "nodemon dist/client.js",
     "watch-ts": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
