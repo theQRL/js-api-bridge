@@ -1,11 +1,7 @@
+/* eslint import/prefer-default-export: 0 */
+
 export class TransferTransaction {
-  constructor(public addressesTo: Array<string>,
-              public amounts: Array<string>,
-              public fee: string,
-              public publicKey: string,
-              public signature: string,
-              public transactionHash: string,
-              public masterAddress: string) {
+  constructor(addressesTo, amounts, fee, publicKey, signature, transactionHash, masterAddress) {
     this.masterAddress = masterAddress;
     this.fee = fee;
     this.publicKey = publicKey;
@@ -14,6 +10,7 @@ export class TransferTransaction {
     this.addressesTo = addressesTo;
     this.amounts = amounts;
   }
+
   toJSON() {
     return {
       masterAddress: this.masterAddress,
@@ -22,7 +19,7 @@ export class TransferTransaction {
       signature: this.signature,
       transactionHash: this.transactionHash,
       addressesTo: this.addressesTo,
-      amounts: this.amounts,
-    }
+      amounts: this.amounts
+    };
   }
 }
