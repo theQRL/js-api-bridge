@@ -1,9 +1,9 @@
 // import {AxiosResponse} from 'axios';
 const axios = require("axios");
 
-import {TransferTransaction} from "./transactions/TransferTransaction";
-export {TransferTransaction} from "./transactions/TransferTransaction";
-export {QrlAddressValidator} from "./helper";
+import { TransferTransaction } from "./transactions/TransferTransaction";
+export { TransferTransaction } from "./transactions/TransferTransaction";
+export { QrlAddressValidator } from "./helper";
 
 const url = require('url');
 export class QrlAPI {
